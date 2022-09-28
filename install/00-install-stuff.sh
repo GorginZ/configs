@@ -16,10 +16,17 @@ brew_install() {
   echo "Installing $1"
   brew install $2 || prompt_continue $1
 }
+#TODO
+#need to do the manual steps for brew
+#echo "Installing HomeBrew"
+#- Run these three commands in your terminal to add Homebrew to your PATH:
+#    echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/georgialeng/.zprofile
+#    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/georgialeng/.zprofile
+#    eval "$(/opt/homebrew/bin/brew shellenv)"
+#- Run brew help to get started
+#- Further documentation:
 
-echo "Installing HomeBrew"
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || prompt_continue Homebrew
+#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || prompt_continue Homebrew
 
 #general dev
 brew_install "non mac vim" "vim"
