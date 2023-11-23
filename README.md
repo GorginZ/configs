@@ -1,6 +1,7 @@
 # configs
 Just some simple stuff to try make setting up new machines faster
 
+
 # MACOS Basic set up (m1 mac)
 run  ```./install/00-install-stuff.sh``` to install staples like brew iterm2, vscode, watch, yq, jq - stuff that I think should be agnostic to whether m1 or not.
 
@@ -14,3 +15,11 @@ https://github.com/ohmyzsh/ohmyzsh
 https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/
 
 https://docs.docker.com/desktop/install/mac-install/
+
+
+VSCODE
+
+vscodevim
+rainbow inent
+rainbow braces
+

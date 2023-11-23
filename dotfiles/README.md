@@ -3,6 +3,13 @@
 ### vim
 make sure non baked in vim is installed (vim version i good) -> reason being can't use plugin for yaml guidelines bc macOS version doesn't have certain functions.
 
+install plug
+
+```bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
 open vim and run: ```:PlugInstall``` to install plugins.
 
 ---
