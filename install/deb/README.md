@@ -162,7 +162,7 @@ This is ready to go.
 ## Plug it into thinkpad
 
 
-Debian screen. You get an option for graphical install etc. proceed with installation, it's all guided and very simple.
+You get an option for graphical install etc. proceed with installation however you choose, it's all simple.
 
 hostname I did: ```debianpadgorg``` (why did I do this, idk we have a few thinkpads what if idk I just thought I'd make it more identifiable but in hindsight kinda dumb.)
 
