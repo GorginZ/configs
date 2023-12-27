@@ -11,7 +11,7 @@ This is my runsheet for the steps I took to set up a new 2013 t440p I was gifted
 
 I have 2021 MacBook Pro (m1 chip) on Montery 12.5 so I looked into [UNetbootin](https://unetbootin.github.io/) but ran into the issue raised [here](https://github.com/unetbootin/unetbootin/issues/286) where the program prompts for password. I read the issue and decided to go another way, which would be to just download the ISO and copy it across to the USB, this is what I recommend and would do in future because it's so simple.  
 
-## 0. Identify the appropriate ISO for your machine and download it 
+## Identify the appropriate ISO for your machine and download it 
 
 ##### Architecture
 I'll need AMD64 because that's the CPU architecture I've got.
@@ -25,7 +25,7 @@ I'm doing a *network install*, where the base entire OS is installed and remaini
 See: [debian docs on Network install from a minimal cd](https://www.debian.org/CD/netinst/#netinst-stable) download for amd64 arch.
 
 
-## 0. prepare boot media
+## prepare boot media
 
 ##### Copy the ISO it over to USB
 
@@ -35,9 +35,10 @@ Simple as:
 I alo read this OSX daily [how-to](https://osxdaily.com/2015/06/05/copy-iso-to-usb-drive-mac-os-x-command/) which works with some modifications to commands. It's from 2015 so probably with new OSX releases there are some differences to be accounted for. This was too easy and worked great. 
 
 
-#### 0. confirm  100% I have the right device to target
+#### Identify your USB with diskutil and confirm 100% you have the right device to target
 
 Make sure I'm definitely targetting the correct device...
+>IMPORTANT: triple check because this will get wiped
 
 So I take a look at what I have (usb plugged in)
 
@@ -127,7 +128,7 @@ I'll just check on my iso, about to craft command with this path ofc:
 /Users/georgialeng/Downloads/debian-12.4.0-amd64-netinst.iso
 ```
 
-unmount the disk (OSX article says to do this, I do not think this is necessary, I repeated this process after I realisd I did not actually have a hard drive in my thinkpad (lol) and in my rush doing the install I partitioned the USB and so ofc had to re-do the boot media... and forgot to unmount, so I don't believe this is necessary)
+unmount the disk
 
 ```
 ➜  my-cluster diskutil unmount /dev/disk6s2
